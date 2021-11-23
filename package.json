@@ -1,0 +1,19 @@
+{
+  "name": "polybar-audio",
+  "version": "0.0.1",
+  "description": "Displays audio output from various applications in a format made for Polybar",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisenaaaa/polybar-audio.git"
+  },
+  "author": "Lisenaaaa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lisenaaaa/polybar-audio/issues"
+  },
+  "homepage": "https://github.com/Lisenaaaa/polybar-audio#readme"
+}
