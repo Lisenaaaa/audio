@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const bus = require('dbus-next').sessionBus()
 const args = process.argv
 args.shift()
