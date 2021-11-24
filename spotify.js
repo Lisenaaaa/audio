@@ -1,5 +1,4 @@
-const dbus = require('dbus-next')
-const bus = dbus.sessionBus()
+const bus = require('dbus-next').sessionBus()
 const args = process.argv
 args.shift()
 args.shift()
