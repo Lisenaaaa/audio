@@ -2,8 +2,6 @@
 
 const bus = require('dbus-next').sessionBus()
 const args = process.argv
-args.shift()
-args.shift()
 
 async function getFirefoxName() {
 	let obj = await bus.getProxyObject('org.freedesktop.DBus', '/org/freedesktop/DBus')
@@ -11,7 +9,7 @@ async function getFirefoxName() {
 	let names = await iface.ListNames()
 	let result = names.filter((n) => n.startsWith('org.mpris.MediaPlayer2.firefox'))
 
-    return result[0]
+	return result[0]
 }
 
 ;(async () => {
@@ -39,12 +37,26 @@ async function getFirefoxName() {
 				break
 
 			case undefined:
-				console.log(firefox.name.split('.')[firefox.name.split('.').length - 1])
+				console.log(properties.getAll())
 		}
 		process.exit()
 	} catch (err) {
 		if (err.message === 'Invalid bus name: undefined') console.log('')
-		else (console.error(err))
-        process.exit()
+		else console.error(err)
+		process.exit()
 	}
+})()
+
+class functions {
+	async main() {}
+
+	async youtube(action) {}
+}
+
+;(async () => {
+	const args = process.argv
+	args.shift()
+	args.shift()
+
+	
 })()
